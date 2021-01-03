@@ -5,10 +5,10 @@ dim(flights)
 head(flights, 10)
 flights<-nycflights13::flights
 
-filter(flights, month == 1, day == 1)
+dplyr::filter(flights, month == 1, day == 1)
 
 ##------
-arrange(flights, year, month, day)
+dplyr::arrange(flights, year, month, day)
 
 ###
 arrange(flights, desc(arr_delay))
