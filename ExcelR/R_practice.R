@@ -3,7 +3,7 @@ library(dplyr)
 library(nycflights13)
 dim(flights)
 head(flights, 10)
-flights<-flights
+flights<-nycflights13::flights
 
 filter(flights, month == 1, day == 1)
 
